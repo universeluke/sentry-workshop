@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,6 +25,7 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+        <button onClick={() => { throw new Error("This is your first error!"); }}>Break the world</button>;
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
